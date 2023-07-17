@@ -1,0 +1,28 @@
+---
+
+import Layout from '../layouts/layout.astro'
+import Navbar from '../components/navbar.astro'
+
+---
+
+<Layout>
+	<div class="min-h-screen  w-screen flex flex-col bg-no-repeat bg-center bg-cover font-principal"
+		style="background-image: url('../../fondo.avif');">
+
+		<Navbar/>
+
+		<div class="container w-4/6 h-[30rem] mx-auto flex flex-col items-start justify-center 
+					max-sm:w-11/12 max-sm:text-center">
+			<h1 class="font-black text-[3.5em] transition mb-5 hover:text-red-600 hover:transition-colors hover:cursor-pointer max-sm:text-4xl max-sm:text-center">HOLA! SOY JHOAN SARMIENTO</h1>
+			<div class="[&>p]:mt-5 [&>p]:text-xl">
+				<p> Un Desarrollador Web, enfocado en desarrollo Front-End Trabajo para poder ayudarte hacer tu sueño realidad en internet </p>
+				<p> Aqui podras ver y conocer todo sobre mi y mis proyectos</p>
+			</div>
+			<div class="flex w-full h-20 mt-5 items-center max-sm:justify-center">
+				<a class="px-10 py-3 border rounded-md border-red-600 transition hover:transition hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_1px_#D92525]"  href='/sobreMi'> MAS SOBRE MÍ</a>
+			</div>
+		</div>
+
+	</div>
+</Layout>
+

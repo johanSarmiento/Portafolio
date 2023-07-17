@@ -1,0 +1,79 @@
+---
+
+import Layout from "../layouts/layout.astro";
+import Navbar from "../components/navbar.astro";
+
+const habilidades = ["CSS","HTML","JavaScript","Git","Github","React","Next.js","MySQL","SCRUM","Resposive Design"]
+
+---
+
+<Layout>
+    <div class=" h-auto flex flex-col justify-center bg-[#f2f2f2]">
+
+        <Navbar />
+
+        <div class="container mx-auto h-auto flex flex-wrap justify-around gap-10 mt-20">
+
+            <div class="container w-[30rem] [&>p]:mt-4 [&>p]:ml-2 text-lg font-normal">
+                <h2 class="text-4xl font-black">Sobre Me</h2>
+                <p>
+                    Soy un <samp class="font-black">desarrollador web</samp>, enfocado por la parte del Front-end, soy alguien muy <samp class="font-black">Apasionado</samp> creando cositas para la web. Inicie con mi aprendizaje autono y haciendo parte de un bootcamp en el año 2022. 
+                </p>
+
+                <p>
+                    he avanzado rapidamente con mi adquisición con las tectnologias que he trabajado por mi cuentra porpia. Cada dia me <samp class="font-black">Gusta Aprender</samp> algo nuevo. Si quieren ver mas informacion puedes revisar en mi <samp class="font-black text-red-600"> <a href="https://www.linkedin.com/in/johan-stevan-sarmiento-cacua-351272268" target='_blank'> Linkedin</a></samp>
+                </p>
+
+                <p>
+                    Estoy abierto a oportunidades de <samp class="font-black">Tabajo</samp> donde pueda contribuir, <samp class="font-black">Aprender y Crecer</samp>. Si tiene una buena oportunidad que coincida con mis habilidades y experiencia, no dude en ponerse en contacto conmigo.
+                </p>
+            </div>
+
+            <div class="container w-[30rem]">
+
+                <h2 class="text-4xl font-black">Mis Habilidades</h2>
+
+                <div class="w-5/6 flex flex-wrap mt-4 justify-center gap-5 [&>div]:bg-gray-300 [&>div]:p-2 [&>div]:rounded [&>div]:text-lg">
+
+                    {habilidades.map( habilidad => (
+                        <div class="hover:bg-red-600 hover:transition hover:text-white hover:cursor-pointer">{habilidad}</div>
+                    ))}
+
+                </div>
+            </div>
+
+            <div class="container mx-auto ">
+
+                <h2>Experiencia</h2>
+                
+                <div>
+
+                    <div>
+                        <h3>Github</h3>
+                        <a href="https://github.com/johanSarmiento" target='_blank'></a> 
+                    </div>
+
+                    <p>
+                        Para mi lo mas importarte que puede tener una pagina, no solo es su estilo si no su funcionalidad y accesibilidad con el usuario. Es algo que siempre he intentado implementar en los proyectos propios que he realizado. Los cuales podras verlos en mi <samp> <a href="https://github.com/johanSarmiento" target='_blank'> GitHub</a></samp>
+                    </p>
+
+                </div>
+
+                <div>   
+
+                    <div>
+                        <h3>MiDenuncia</h3>
+                        <a href="https://midenuncia.online" target='_blank'></a> 
+                    </div>
+
+                    <p>
+                        Este fue un proyecto el cual se realizo en grupo en el bootcamp en el que estuve estudiando. Este proyecto tiene una idea de ser una red social de denuncias la cual estaria conectada con el gobierna, la cual le llegara le llegara con un derecho de peticion del problema el cual la persona reporto en la aplicacióin. Esta pagina la podras ver en mi<samp> <a href="https://midenuncia.online" target='_blank'> MiDenuncia</a></samp>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</Layout>
